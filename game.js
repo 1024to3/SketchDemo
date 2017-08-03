@@ -17,6 +17,10 @@ var move_speed = 10;
 
 //draw a blue bubbleRect to a new layer //#1000FFCC//#0000FF10
 var bubble = DrawLayer.bubbleRect([215, 20],"rgba(0,0,255,10)","rgb(16,0,240)", 2);
+//draw text onto bubbles layer
+bubble.setRGB([10, 10, 10]);
+bubble.draw.fillText("a/d=left/right left-arrow/right-arrow=up/down", 4, 12);
+
 
 //after all resource have loaded run code
 window.onload = function(){
@@ -83,7 +87,6 @@ window.onload = function(){
 
         //draw bubble and instructions
         this.buffer_layer.drawFromLayer(bubble, 10, 18);
-        this.buffer_layer.draw.fillText("a/d=left/right left-arrow/right-arrow=up/down", 20, 30);
 
         //draw on draw_layer
         draw_layer.draw.fillRect(p_loc[0], p_loc[1], 0.1, 0.1);
