@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>game</title>
+    <!-- this style is used in full screen games -->
+    <style type="text/css">
+        canvas { width:100%; height:100%; margin:0; }
+        html, body {overflow: hidden; }
+    </style>
+    <!-- allows you to easily draw to canvas in layers -->
+    <script type="text/javascript" src="LayeredCanvas.js"></script>
+    <!-- allows you to easily make a common game loop -->
+    <script type="text/javascript" src="GameLoop.js"></script>
+    <!-- used for template that sets up a game loop with double buffering and full-screen -->
+    <script type="text/javascript" src="Template.js"></script>
+    <!-- easily handel key input -->
+    <script type="text/javascript" src="KeyEventHandler.js"></script>
+    <!-- new file with preset drawable shapes -->
+    <script type="text/javascript" src="DrawLayer.js"></script>
+    <!-- game code -->
+    <script type="text/javascript" src="game.js"></script>
+</head>
+<body>
+    <!-- canvas -->
+    <canvas id="canvas"></canvas>
+</body>
+</html>
